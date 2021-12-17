@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guinewworld.AdventureGameController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="67.0" prefWidth="59.0" text="DEX:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="33.0" prefHeight="29.0" prefWidth="59.0" text="STR:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="231.0" layoutY="33.0" prefHeight="29.0" prefWidth="59.0" text="INT:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="33.0" prefHeight="29.0" prefWidth="40.0" text="HP:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="33.0" prefHeight="29.0" prefWidth="77.0" text="GOLD:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="FightB" layoutX="26.0" layoutY="120.0" mnemonicParsing="false" onAction="#Fight" prefHeight="26.0" prefWidth="97.0" text="Fight" />
+      <Button fx:id="SearchRoomB" layoutX="24.0" layoutY="159.0" mnemonicParsing="false" onAction="#SearchRoom" prefHeight="26.0" prefWidth="97.0" text="Search Room" />
+      <Button fx:id="RunB" layoutX="24.0" layoutY="200.0" mnemonicParsing="false" onAction="#Run" prefHeight="26.0" prefWidth="97.0" text="Run" />
+      <Button fx:id="SleepB" layoutX="24.0" layoutY="244.0" mnemonicParsing="false" onAction="#Sleep" prefHeight="26.0" prefWidth="97.0" text="Sleep" />
+      <Label fx:id="DexL" layoutX="75.0" layoutY="39.0" text="0" />
+      <Label fx:id="STRL" layoutX="176.0" layoutY="39.0" text="0" />
+      <Label fx:id="INTL" layoutX="286.0" layoutY="39.0" text="0" />
+      <Label fx:id="HPL" layoutX="393.0" layoutY="39.0" text="0" />
+      <Label fx:id="GoldL" layoutX="521.0" layoutY="39.0" text="0" />
+      <Button fx:id="LeftB" layoutX="235.0" layoutY="174.0" mnemonicParsing="false" onAction="#Left" text="&lt;" />
+      <Button fx:id="RightB" layoutX="281.0" layoutY="174.0" mnemonicParsing="false" onAction="#Right" text="&gt;" />
+      <Button fx:id="UPb" layoutX="260.0" layoutY="146.0" mnemonicParsing="false" onAction="#Up" text="^" />
+      <Button fx:id="DownB" layoutX="260.0" layoutY="200.0" mnemonicParsing="false" onAction="#Down" text="V" />
+      <Button fx:id="Start" layoutX="491.0" layoutY="351.0" mnemonicParsing="false" onAction="#Refresh" prefHeight="26.0" prefWidth="68.0" text="Start" />
+      <Label fx:id="Status" layoutX="29.0" layoutY="343.0" text="Welcome To BAD Adventure Game!" />
+      <Button fx:id="CouchRoomB" layoutX="464.0" layoutY="134.0" mnemonicParsing="false" onAction="#ChangeRoomCouch" text="CouchRoom" />
+      <Button fx:id="KitchenRoomB" layoutX="464.0" layoutY="175.0" mnemonicParsing="false" onAction="#ChangeRoomKitchen" text="KitchenRoom" />
+      <Button fx:id="LivingRoomL" layoutX="461.0" layoutY="213.0" mnemonicParsing="false" onAction="#ChangeRoomLiving" prefHeight="26.0" prefWidth="91.0" text="LivingRoom" />
+   </children>
+</AnchorPane>
